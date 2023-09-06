@@ -91,7 +91,7 @@ export const Home = ({setNavbar})=>{
           </div>
           
           <div className="hidden md:block absolute top-40 md:top-32 text-[25px] md:text-[35px] text-white" >
-           <span class="tracking-[0.1rem] " 
+           <span className="tracking-[0.1rem] " 
                style={{textShadow:"3px 3px black, 3px 3px lightblue",
                WebkitTextStrokeWidth:"3px",
                WebkitTextStrokeColor:"gray"}} >Oakar Kyaw</span>

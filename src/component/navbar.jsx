@@ -5,7 +5,7 @@ export const NavBar = ()=>{
     const months = ["Jan","Feb","Mar","April","May","June","July","August","Sept","Oct","Nov","Dec"];
     const time = new Date();
     const today = time.getDate();
-    console.log("tt is "+today)
+    
     const Hours = time.getHours();
     const Minutes = time.getMinutes();
     
