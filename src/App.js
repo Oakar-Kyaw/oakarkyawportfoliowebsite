@@ -1,13 +1,26 @@
 import { NavBar } from './component/navbar';
 import './dist/output.css';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { AboutMe } from './component/aboutme';
+import { Project } from './component/project';
+import { Skill } from './component/skill';
+import { Education } from './component/education';
+import { Contact } from './component/contact';
+import { Home } from './component/home';
 
 function App() {
   return (
-    <div className="App  h-screen flex flex-col justify-center
-    bg-[url(https://i.pinimg.com/564x/94/97/d9/9497d9cb35963cf178dc7e0e94965d3b.jpg)]
-    bg-center">
-        <NavBar/>
-    </div>
+    <BrowserRouter>
+     <Routes>
+       <Route path="/" element={<Home/>}/>
+       <Route path="/about" element={<AboutMe/>}/>
+       <Route path="/project" element={<Project/>}/>
+       <Route path="/skill" element={<Skill/>}/>
+       <Route path="/education" element={<Education/>}/>
+       <Route path="/contact" element={<Contact/>}/>
+     </Routes>
+       
+    </BrowserRouter>
   );
 }
 
