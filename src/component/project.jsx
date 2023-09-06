@@ -12,7 +12,7 @@ import { NavBar } from "./navbar";
 import { useNavigate } from "react-router-dom";
 
 export const Project = ({setNavbar})=>{
-    const image = [jobportal,gamewebsite,japanesewordguessinggame,minirest];
+    
     const navigate = useNavigate();
     const [number,setNumber] = useState(0);
     
@@ -25,6 +25,7 @@ export const Project = ({setNavbar})=>{
         const isLastNumber = number == constant.length-1;
         isLastNumber ? setNumber(0) : setNumber(number+1);
     }
+    const image = [jobportal,gamewebsite,japanesewordguessinggame,minirest];
     return (
      <div className="App  h-screen flex flex-col justify-center
         bg-[url(https://i.pinimg.com/564x/94/97/d9/9497d9cb35963cf178dc7e0e94965d3b.jpg)]
@@ -35,7 +36,7 @@ export const Project = ({setNavbar})=>{
         <div className="animate-fadeforward max-w-[600px] font-kanit font-bold mx-auto flex  relative py-4 ">
         <div className=" flex flex-col w-full justify-center items-center space-y-3 ">
             <div className="flex flex-col space-y-2 ">
-                <h2 className="text-blue-900 text-xl md:text-2xl text-center w-full transition-all duration-1000">{constant[number].name}</h2>
+                <h2 className="text-blue-900 text-xl md:text-2xl text-center w-full ">{constant[number].name}</h2>
                 <h6 className="text-red-900 text-center w-full">Tech Stack: {constant[number].tech}</h6>
                 <div className="relative h-40 w-[300px] md:w-[460px] md:h-60  p-2 group">
                     <img src={image[number]} alt="" className="w-full h-40 md:w-full 
