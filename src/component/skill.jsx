@@ -202,6 +202,7 @@ export const Skill = ({setNavbar})=>{
              </div>
              
              <div className="flex space-x-2">
+                
                 <button className="bg-green-700 text-white p-2 rounded-md hover:bg-green-900" onClick={()=>navigate("/about")} >About</button>
                 <button className="bg-blue-700 text-white p-2 rounded-md hover:bg-blue-900" onClick={()=>navigate("/project")}>Project</button>
                 <button className="bg-red-700 text-white p-2 rounded-md hover:bg-red-900" onClick={()=>navigate("/contact")}>Contact</button>

@@ -3,6 +3,7 @@ import okk from "../image/oakar.jpg";
 import ok from "../image/ok.png";
 import cv from "../cv/oakarkyawjuniordevelopercv.pdf";
 import {BsFillPersonFill} from "react-icons/bs";
+import {AiTwotoneStar} from "react-icons/ai";
 import {BiBrain} from "react-icons/bi";
 import {PiRocketLight,PiGraduationCapThin} from "react-icons/pi";
 import {HiOutlineEnvelope} from "react-icons/hi2";
@@ -101,6 +102,18 @@ export const Home = ({setNavbar})=>{
        
 
        <div className="flex flex-col justify-end items-end">
+           
+       <div className="mt-6">
+            
+            <div 
+              className="card hover:cursor-pointer
+              hover:-translate-y-2 duration-1000 bg-blue-800" 
+              onClick={()=>{navigate("/experience")}}>
+                <AiTwotoneStar className="text-[25px] text-white"/>
+            </div>
+            
+            <p>Experience</p>
+         </div>
 
             <div className="mt-6">
             
